@@ -12,7 +12,7 @@ const AnimatedList = ({ items, addItem, removeItem }) => {
             key={item.id}
             timeout={500}
             classNames={{
-              enter: styles.itemEnter,
+              enter: styles.itementer,
               enterActive: styles.itemEnterActive,
               exit: styles.itemExit,
               exitActive: styles.itemExitActive,

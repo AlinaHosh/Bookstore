@@ -1,5 +1,8 @@
 .body {
   padding: 1rem;
   font-family: Georgia, serif;
-  column-count: 3;
 }
+.bodycatalog, .body{
+  column-count: 2;
+}
+

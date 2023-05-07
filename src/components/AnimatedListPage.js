@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/Body.module.css';
 import AnimatedList from './AnimatedList';
-import NewItemForm from './styles/NewItemForm.module.css';
+import NewItemForm from './NewItemForm';
 
 const AnimatedListPage = ({ items, onAddItem, onDelete }) => {
   return (

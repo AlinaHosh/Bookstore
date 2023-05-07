@@ -8,6 +8,7 @@ const Item = ({ item, onCheck, onItemRender }) => {
   }, [onItemRender]);
 
   return (
+    <div class="bodycatalog">
     <div className={styles.item}>
       <div className="item-image">
         <img src={item.cover} alt={item.name} />
@@ -27,6 +28,7 @@ const Item = ({ item, onCheck, onItemRender }) => {
           <span>Add to the cart</span>
         </div>
       </div>
+    </div>
     </div>
   );
 };

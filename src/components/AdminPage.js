@@ -6,7 +6,7 @@ const AdminPage = () => {
   const [items, setItems] = useState(itemsData);
 
   const handleAddItem = (newItem) => {
-    console.log("Adding new item:", newItem); 
+    console.log("Adding new book:", newItem); 
     setItems([...items, newItem]);
   };
 
@@ -15,8 +15,10 @@ const AdminPage = () => {
   };
 
   return (
+   
     <AnimatedListPage onAddItem={handleAddItem} onDelete={handleDelete} items={items} />
-  );
+  
+    );
 };
 
 export default AdminPage;

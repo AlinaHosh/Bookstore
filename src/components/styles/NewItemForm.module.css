@@ -1,46 +1,44 @@
 .newItemForm {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .newItemForm input,
-  .newItemForm textarea,
-  .newItemForm select {
-    width: 90%;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    outline: none;
-  }
-  
-  .newItemForm textarea {
-    min-height: 100px;
-    resize: vertical;
-  }
-  
-  .newItemForm button {
-    width: 97%;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .newItemForm button:hover {
-    background-color: #0056b3;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+ 
+}
+
+.newItemForm input,
+.newItemForm textarea,
+.newItemForm select {
+  width: 90%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+.newItemForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.newItemForm button {
+  width: 97%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #66b9a7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.newItemForm button:hover {
+  background-color: rgb(72, 151, 121);
+}

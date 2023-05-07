@@ -25,6 +25,7 @@ class Details extends Component {
     const exchangeRate = 0.024;
 
     return (
+      <div class="bodyadmin">
       <div className={styles.productdetails}>
         <div class={styles.det}>
         <img src={product.cover} alt={product.name} />
@@ -43,6 +44,7 @@ class Details extends Component {
           <button type="submit">Submit</button>
         </form>
         </div>
+      </div>
       </div>
     );
   }

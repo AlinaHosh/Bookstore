@@ -7,11 +7,8 @@ import Footer from './components/Footer';
 import Menu from './components/Menu';
 import DetailsWrapper from './components/DetailsWrapper';
 import itemsData from './components/Data';
-import Context from './components/Context';
 import UserHistoryContext from './components/UserHistoryContext';
-
 import { useItems, useDisplayedItems, useShoppingList } from './components/customHooks';
-
 import History from './components/History';
 import Debug from './components/Debug';
 import AdminPage from './components/AdminPage';
@@ -117,7 +114,6 @@ function App() {
               <Route path="/history" element={<History />} />
               <Route path="/animated-list" element={<AdminPage />} />
             </Routes>
-            <Debug />
             <Footer />
           </UserHistoryContext.Provider>
         </Router>
