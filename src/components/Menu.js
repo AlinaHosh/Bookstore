@@ -1,15 +1,15 @@
 import React from 'react';
-import './Menu.css';
+import styles from './styles/Menu.module.css';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 
 const Menu = ({ isLoggedIn, onLoginLogout, categories, onCategoryChange }) => {
   return (
-    <nav className="menu">
+    <nav className={styles.menu}>
       {categories.map((category, index) => (
         <button
           key={index}
-          className="menu-button"
+          className={styles.menubutton}
           onClick={() => onCategoryChange(category)}
           >
           {category}

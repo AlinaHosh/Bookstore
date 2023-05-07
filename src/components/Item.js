@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Item.css'; 
+import styles from './styles/Item.module.css';
 import { Link } from 'react-router-dom';
 
 const Item = ({ item, onCheck, onItemRender }) => {
@@ -8,12 +8,12 @@ const Item = ({ item, onCheck, onItemRender }) => {
   }, [onItemRender]);
 
   return (
-    <div className="item">
+    <div className={styles.item}>
       <div className="item-image">
         <img src={item.cover} alt={item.name} />
       </div>
       <div className="item-details">
-        <h3 className="item-title">
+      <h3 className={styles.itemTitle}>
           <Link to={`/product/${item.id}`}>{item.name}</Link>
         </h3>
         <h4 className="item-author">{item.author}</h4>

@@ -14,6 +14,7 @@ import { useItems, useDisplayedItems, useShoppingList } from './components/custo
 
 import History from './components/History';
 import Debug from './components/Debug';
+import AdminPage from './components/AdminPage';
 
 function AppHeader({ itemCount, displayedItemCount }) {
   const location = useLocation();
@@ -114,6 +115,7 @@ function App() {
                 }
               />
               <Route path="/history" element={<History />} />
+              <Route path="/animated-list" element={<AdminPage />} />
             </Routes>
             <Debug />
             <Footer />

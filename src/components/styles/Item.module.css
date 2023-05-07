@@ -1,0 +1,56 @@
+.item {
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  font-family: Georgia, serif;
+}
+
+.item-image img {
+  width: 100px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.item-title,
+.item-author,
+.item-category {
+  margin: 0;
+}
+
+.item-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.item-checkbox input {
+  margin-right: 5px;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.item-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.item-checkbox input {
+  margin-right: 5px;
+}
+
+.item-checkbox span {
+  margin-right: 10px;
+}

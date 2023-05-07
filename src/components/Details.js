@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Details.css';
+import styles from './styles/Details.module.css';
 import CurrencyConverter from './CurrencyConverter';
 
 class Details extends Component {
@@ -25,10 +25,14 @@ class Details extends Component {
     const exchangeRate = 0.024;
 
     return (
-      <div className="product-details">
+      <div className={styles.productdetails}>
+        <div class={styles.det}>
+        <img src={product.cover} alt={product.name} />
         <h2>{product.name}</h2>
-        <p>{product.description}</p>
+        <p>{product.author}</p>
         <CurrencyConverter amount={product.price} rate={exchangeRate} currency="EUR" />
+        </div>
+        <div class={styles.det}>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="comment">Add a comment:</label>
           <textarea
@@ -38,6 +42,7 @@ class Details extends Component {
           ></textarea>
           <button type="submit">Submit</button>
         </form>
+        </div>
       </div>
     );
   }

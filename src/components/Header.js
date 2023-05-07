@@ -1,13 +1,13 @@
 import React from 'react';
-import './Header.css';
+import styles from './styles/Header.module.css';
 
 const Header = ({ itemCount, displayedItemCount }) => {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <h1>Bookstore Thalia</h1>
       <div>
-        <span className="item-count">Books in the cart: {itemCount}</span>
-        <span className="displayed-item-count">
+        <span className={styles.itemcount}>Books in the cart: {itemCount}</span>
+        <span className="displayed-itemcount">
           All books: {displayedItemCount}
         </span>
       </div>
